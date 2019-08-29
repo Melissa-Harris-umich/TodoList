@@ -1,3 +1,6 @@
+
+$(document).ready(function () {
+
 //Check off specific todos once clicked
 $("li").click(function() {
     $(this).toggleClass("completed")
@@ -17,3 +20,6 @@ $("input[type='text'").keypress(function(event){
         console.log("You hit enter!!")
     }
 });
+
+});
+
