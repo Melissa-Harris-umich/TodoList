@@ -1,5 +1,5 @@
 
-$(document).ready(function () {
+
 
 //Check off specific todos once clicked
 $("li").click(function() {
@@ -21,5 +21,4 @@ $("input[type='text'").keypress(function(event){
     }
 });
 
-});
 
