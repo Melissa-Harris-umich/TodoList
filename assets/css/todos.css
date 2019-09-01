@@ -1,4 +1,10 @@
+body {
 
+    background: rgb(154,240,236);
+background: radial-gradient(circle, rgba(154,240,236,1) 0%, rgba(108,32,173,1) 100%);
+
+
+}
 #container{
     background: #f7f7f7;
     margin: 100px auto;
