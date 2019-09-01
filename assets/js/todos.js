@@ -2,12 +2,14 @@
 
 
 //Check off specific todos once clicked
-$("li").click(function() {
+//When an li is clicked inside this ul.
+$("ul").on("click", "li", function() {
     $(this).toggleClass("completed")
 });
 
 //When span is clicked, todo will fade out
-$("span").click(function(event){
+//Events have to exist before if appending things that will eventually change
+$("ul").on("click", "span", function(event){
     $(this).parent().fadeOut(500, function() {
         $(this).remove();
 
@@ -22,7 +24,7 @@ $("input[type='text'").keypress(function(event){
         var todoText = $(this).val();
 
         //create new li and add to ul using append
-        $("ul").append("<li>" + todoText+ "</li>");
+        $("ul").append("<li> <span>X </span>" + todoText+ "</li>");
     }
 });
 
