@@ -17,7 +17,12 @@ $("span").click(function(event){
 
 $("input[type='text'").keypress(function(event){
     if(event.which === 13){
-        console.log("You hit enter!!")
+
+        //take input from input and store in variable
+        var todoText = $(this).val();
+
+        //create new li and add to ul using append
+        $("ul").append("<li>" + todoText+ "</li>");
     }
 });
 
